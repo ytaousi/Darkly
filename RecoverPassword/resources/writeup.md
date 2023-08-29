@@ -1,3 +1,10 @@
+```
+in the web application we have a signin page that requires a user and password to login , i tryed the credentials droped from the htpasswd file but didnt work .
+also there is a  way to recover the password using "I forgot my password link"  but apparently it doesnt ask us to define our email where to receive it or anything , then ok lets try and catch the request and see what happens.
+
+
+
+
 POST /index.php?page=recover HTTP/1.1
 Host: localhost:8080
 Content-Length: 44
@@ -21,3 +28,12 @@ Cookie: I_am_admin=68934a3e9455fa72420237eb05902327
 Connection: close
 
 mail=webmaster%40borntosec.com&Submit=Submit
+
+
+apparently there is a default email already in the request , lets put our email for example so that the password get sent to us , and we got the flag.
+```
+
+
+***Prevention***
+```
+```

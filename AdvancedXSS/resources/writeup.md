@@ -6,7 +6,6 @@ the tag object hold as data a url to the nsa_prism jpg
 and it is passed to it through the variable src
 
 data:application/javascript;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
-
 <object data=""> </object>
 
 PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==

