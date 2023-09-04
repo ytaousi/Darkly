@@ -10,3 +10,6 @@ what if we can encrypt the string "true" using md5 and use it as our cookie . fo
 
 
 ***Prevention***
+```
+
+```
