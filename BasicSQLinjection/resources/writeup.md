@@ -70,5 +70,13 @@ countersign : 5ff9d0165b4f92b14994e5c685cdce28
 
 
 ***Prevention***
+
+### Prepared Statements (with Parameterized Queries)
 ```
+The use of prepared statements with variable binding (aka parameterized queries) is how all developers should first be taught how to write database queries. They are simple to write, and easier to understand than dynamic queries. Parameterized queries force the developer to first define all the SQL code, and then pass in each parameter to the query later. This coding style allows the database to distinguish between code and data, regardless of what user input is supplied.
+```
+
+### Allow-list Input Validation
+```
+the risk of SQL injection can be reduced, as malicious input that does not match an acceptable value will not be processed by the application. This helps to prevent attackers from inserting malicious code into an SQL statement and executing unauthorized actions.
 ```

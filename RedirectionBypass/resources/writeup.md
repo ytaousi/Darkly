@@ -17,7 +17,7 @@ GET http://localhost:8080/index.php?page=redirect&site=http://maliciousWebSite H
 and we got our flag
 ```
 
-***Prevention***
+*** Prevention ***
 
 ### Whitelist Url's
 ```

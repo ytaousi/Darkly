@@ -12,7 +12,9 @@ i will be using the wordlist rockyou.txt to bruteforce the login
 ```
 
 
-***Prevention***
-```
+*** Prevention ***
 
+### Limit Login Attempts 
+```
+Locking an account after a specified number of login attempts is reached and prohibit multiple login attempts from a single IP address for a defined periode
 ```

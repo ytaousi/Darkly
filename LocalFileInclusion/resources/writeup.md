@@ -11,7 +11,7 @@ http://localhost:8080/index.php?page=../../../../../../../etc/passwd
 ```
 
 
-***Prevention***
+*** Prevention ***
 ```
 The most effective solution to eliminate file inclusion vulnerabilities is to avoid passing user-submitted input to any filesystem/framework API. 
 

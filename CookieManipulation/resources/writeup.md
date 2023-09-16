@@ -9,7 +9,9 @@ what if we can encrypt the string "true" using md5 and use it as our cookie . fo
 ```
 
 
-***Prevention***
-```
+*** Prevention ***
 
+### Use the right cookie flags and attributes
+```
+There are several ways to make cookies less accessible to attackers. By setting the httpOnly flag, you can make a cookie inaccessible to scripts. This is recommended especially for session cookies, as is setting the secure flag to ensure that the cookie is only sent over HTTPS. Carefully selecting values for the domain attribute can also minimize cookie abuse – see our cookie security white paper for more information.
 ```
